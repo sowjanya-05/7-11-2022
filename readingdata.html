@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		/*function save(){
+			var how=document.getElementById("how").innerHTML
+			var user=document.getElementById("user").value
+			console.log(how);
+			console.log(user)
+		}*/
+		function count(){
+			var numberOfCharacters=30;
+			var msg=document.getElementById("msg").value
+			console.log(msg.length)
+			document.getElementById("showCount").innerHTML=numberOfCharacters-msg.length
+		}
+	</script>
+</head>
+<body>
+	<!-- <input id="user"/>
+	<p id="how">how are you asma</p>
+	<p>Thank u</p>
+	<button onclick="save()">Submit</button> -->
+	<textarea id="msg" onkeyup="count()"></textarea>
+	<p>Number of characters left:
+		<span id="showCount">30</span>
+	</p>
+</body>
+</html>

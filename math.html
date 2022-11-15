@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(Math.ceil(7.8))
+		console.log(Math.floor(79.8))
+		console.log(Math.round(7.8))
+		console.log(Math.round(7.3))
+		console.log(Math.abs(-17.8))
+		console.log(Math.sqrt(64))
+		console.log(Math.pow(7,8))
+		console.log(Math.random())*/
+		var group="0123456789",randomPassword=[];
+		for(i=1;i<=4;i++){
+			var randomNumber=Math.floor(Math.random()*group.length)
+			console.log(randomNumber,group.charAt(randomNumber))
+			randomPassword.push(group.charAt(randomNumber))
+		}
+		console.log(randomPassword)
+		var result=randomPassword.join('');
+		console.log(result)
+	</script>
+</body>
+</html>
